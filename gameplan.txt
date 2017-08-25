@@ -1,0 +1,4 @@
+1. make a timer
+2. make count for game parts
+3. populate questions from the API
+4. calculate answers

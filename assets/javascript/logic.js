@@ -4,16 +4,23 @@ $( document ).ready(function() {
 
 
 window.onload = function() {
-  $("#reset").on("click", stopwatch.reset);
+  // $("#reset").on("click", stopwatch.reset);
   $("#start").on("click", stopwatch.start);
 };
 
-var ansCorrect  = 0
-var ansIncorrect = 0
+var qz = "https://opentdb.com/api.php?amount=1";
+
+$.ajax({
+  url: qz,
+  method: "GET"
+}).done(function(response) {
+
+  console.log(response);
+})
 var unAnswered = 0
 var numWrong = 0
 var numRight = 0
-var countDown = setTimeout(funciton(), 30000)
+// var countDown = setTimeout(funciton(), 30000)
 var clockRunning = false;
 var timeLeft = setTimeout(function(){alert("GameStart")}, 30000);
 var stopwatch = {
@@ -36,7 +43,7 @@ var stopwatch = {
     });
 
     $("#timeLeft").text("<div>" + timeLeft + "</div>")
-
+    $("start").html("<div>" + qz +"<div>")
 
 
 //time counter

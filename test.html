@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+
+    <title>test Page for API</title>
+
+  </head>
+  <body>
+<script type="text/javascript">
+
+var qz = "https://opentdb.com/api.php?amount=1";
+
+  $.ajax({
+    url : qz,
+    method: "GET"
+  })
+  .done(function(response){
+    console.log(response.question);
+  });
+
+</script>
+
+  </body>
+</html>
