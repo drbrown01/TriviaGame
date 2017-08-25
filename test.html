@@ -22,7 +22,10 @@ var qz = "https://opentdb.com/api.php?amount=1";
     method: "GET"
   })
   .done(function(response){
-    console.log(response.question);
+    console.log(qz);
+    console.log(response);
+    $("response.question").html("<h1>" + response.question + "</h1>");
+
   });
 
 </script>
