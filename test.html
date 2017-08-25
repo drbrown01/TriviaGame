@@ -13,19 +13,24 @@
 
   </head>
   <body>
+    <div class="score">
+
+    </div>
 <script type="text/javascript">
 
-var qz = "https://opentdb.com/api.php?amount=1";
+var qz = "https://opentdb.com/api.php?amount=10&type=multiple";
 
   $.ajax({
     url : qz,
     method: "GET"
   })
   .done(function(response){
-    console.log(qz);
-    console.log(response);
-    $("response.question").html("<h1>" + response.question + "</h1>");
 
+
+    console.log("hello");
+    console.log(response);
+    console.log(response.results[0].question);
+    $(".score").html("<h1>" + response.results[0].question + "</h1>");
   });
 
 </script>
