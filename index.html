@@ -14,30 +14,33 @@
     <div class="container">
 
 
-    <header class="jumbotron">
+    <header class="">
+      <h1 class="display-3">Trivia Game</h1>
       <!--title  -->
-      <div class="display-3">
-        <h1>Trivia Game</h1>
-        <hr>
-        <div class="score">
+      <div class="">
 
+        <hr>
+        <div class="start">
+  <button id="start" class="button-primary" type="button" name="button">Start</button>
         </div>
         <p>This is a simple Trivia Game</p>
-          <button id="start" class="button-primary" type="button" name="button">Start</button>
-          <button id="reset" class="button-primary" type="button" name="button">Reset</button>
+
+          <!-- <button id="reset" class="button-primary" type="button" name="button">Reset</button> -->
 
 
       </div>
     </header>
     <main class="panel panel-warning score">
       <!-- table to populate with data -->
-      <table class="table-bordered">
+      <table class="table-bordered qz">
         <tr>
-          <th>blah</th>
-          <th>blah</th>
-          <th>blah</th>
+          <th>Correct Answers</th>
+          <th>Incorrect Answers</th>
+          <th>Time 00:00</th>
         </tr>
+        <!-- I wanted the elements to populate from the javascript -->
         <tr>
+          <td>blah</td>
           <td>blah</td>
           <td>blah</td>
           <td>blah</td>
@@ -48,7 +51,10 @@
 
     </main>
     <div class="panel panel-primary questions">
-      Questions go here
+
+
+    </div>
+    <div class="panel panel-footer answers">
 
     </div>
 

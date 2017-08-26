@@ -13,7 +13,7 @@
 
   </head>
   <body>
-    <div class="score">
+    <div class="questions">
 
     </div>
 <script type="text/javascript">
@@ -30,7 +30,7 @@ var qz = "https://opentdb.com/api.php?amount=10&type=multiple";
     console.log("hello");
     console.log(response);
     console.log(response.results[0].question);
-    $(".score").html("<h1>" + response.results[0].question + "</h1>");
+    $(".questions").html("<h1>" + response.results[0].question + "</h1>");
   });
 
 </script>
